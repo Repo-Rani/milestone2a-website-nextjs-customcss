@@ -573,7 +573,7 @@ section {
   }
   .heroImage {
     width: 85%;
-    height: 85%;
+    height: auto;
   }
 
   .heroCaption {
@@ -609,7 +609,7 @@ section {
   }
   .heroImage {
     width: 90%;
-    height: 90%;
+    height: auto;
   }
 
   .heroCaption {
@@ -627,6 +627,16 @@ section {
     max-width: 40%;
     font-size: 1.2rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroImageWrapper {
+    margin-top: -9rem;
+    left: 0%;
+  }
+  .heroImage {
+      width: 31rem ;
   }
 }
 
