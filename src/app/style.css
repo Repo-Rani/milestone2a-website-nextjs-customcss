@@ -631,6 +631,11 @@ section {
 }
 
 @media (min-width: 1440px) {
+  .heroCaption {
+    font-size: 2rem;
+    left: 51%;
+    bottom: 27%;
+  }
   .heroImageWrapper {
     margin-top: -9rem;
     left: 0%;
