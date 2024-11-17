@@ -1,10 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bodyColor: hsl(300, 100%, 2%);
+  --sectionColor: hsl(300, 100%, 5%);
+  --cardColor: hsl(300, 100%, 10%);
+  --titleColor: hsl(300, 100%, 23%);
+  --textColor: hsl(0, 0%, 2%);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +20,75 @@
   }
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Jost', sans-serif; 
+
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+section {
+  padding-top: 4rem; 
+  padding-bottom: 4rem; 
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 7rem;  
+    padding-bottom: 7rem; 
+  }
+}
+
+.cardtitle {
+  font-size: 1.5rem; 
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .cardtitle {
+    font-size: 1.875rem; 
+  }
+}
+
+.cardtitle-2 {
+  font-size: 1.5rem; 
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .cardtitle-2 {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardtitle-2 {
+    font-size: 1.875rem; 
   }
 }
